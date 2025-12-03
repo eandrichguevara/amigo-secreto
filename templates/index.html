@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Amigo Secreto</title>
+		<style>
+			body {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				margin: 0;
+				font-family: Arial, sans-serif;
+				background-color: #f4f4f9;
+			}
+			.card {
+				background: white;
+				padding: 2rem;
+				border-radius: 10px;
+				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+				text-align: center;
+				width: 100%;
+				max-width: 400px;
+			}
+
+			/* Estilo para mensaje de error */
+			.alert {
+				background: #ffe6e6;
+				color: #b30000;
+				padding: 10px;
+				border-radius: 5px;
+				margin-bottom: 1rem;
+			}
+			h1 {
+				color: #333;
+				margin-bottom: 1.5rem;
+			}
+			input[type="text"] {
+				width: 100%;
+				padding: 12px;
+				margin-bottom: 1rem;
+				border: 1px solid #ddd;
+				border-radius: 5px;
+				font-size: 18px;
+				text-align: center;
+				text-transform: uppercase;
+				box-sizing: border-box; /* Para que el padding no afecte el ancho total */
+			}
+			button {
+				width: 100%;
+				padding: 12px;
+				background-color: #28a745;
+				color: white;
+				border: none;
+				border-radius: 5px;
+				font-size: 16px;
+				cursor: pointer;
+				transition: background-color 0.3s;
+			}
+			button:hover {
+				background-color: #218838;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="card">
+			<h1>Amigo Secreto 🎁</h1>
+			{% if error %}
+			<div class="alert">{{ error }}</div>
+			{% endif %}
+			<form action="/resultado" method="POST">
+				<input
+					type="text"
+					name="codigo"
+					maxlength="4"
+					placeholder="Ingresa tu código"
+					required
+					autocomplete="off"
+					value="{{ codigo|default('') }}"
+				/>
+				<button type="submit">Ver mi Amigo Secreto</button>
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tu Amigo Secreto</title>
+		<style>
+			body {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				margin: 0;
+				font-family: Arial, sans-serif;
+				background-color: #f4f4f9;
+			}
+			.card {
+				background: white;
+				padding: 2rem;
+				border-radius: 10px;
+				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+				text-align: center;
+				width: 100%;
+				max-width: 400px;
+			}
+			h1 {
+				color: #333;
+				margin-bottom: 1rem;
+			}
+			p {
+				font-size: 1.2rem;
+				color: #555;
+				margin-bottom: 2rem;
+			}
+			.friend-name {
+				font-size: 1.5rem;
+				font-weight: bold;
+				color: #28a745;
+				display: block;
+				margin-top: 0.5rem;
+			}
+			.btn-back {
+				display: inline-block;
+				padding: 10px 20px;
+				background-color: #007bff;
+				color: white;
+				text-decoration: none;
+				border-radius: 5px;
+				transition: background-color 0.3s;
+			}
+			.btn-back:hover {
+				background-color: #0056b3;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="card">
+			<h1>¡Hola {{ nombre }}! 👋</h1>
+			<p>
+				Te ha tocado regalar a:
+				<span class="friend-name">{{ amigo }}</span>
+			</p>
+			<a href="/" class="btn-back">Volver</a>
+		</div>
+	</body>
+</html>
