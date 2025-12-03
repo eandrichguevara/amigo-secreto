@@ -6,7 +6,7 @@ participantes = [
     {"nombre": "Emilio", "grupo": "A"},
     {"nombre": "Iris Vargas", "grupo": "A"},
     {"nombre": "Karol", "grupo": "B"},
-    {"nombre": "Christian", "grupo": "B"},
+    {"nombre": "Christian (Grande)", "grupo": "B"},
     {"nombre": "Renato", "grupo": "C"},
     {"nombre": "Eduardo", "grupo": "C"},
     {"nombre": "Martin", "grupo": "C"},
