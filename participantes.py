@@ -14,6 +14,7 @@ participantes = [
     {"nombre": "Yoyo", "grupo": "D"},
     {"nombre": "Antonio", "grupo": "E"},
     {"nombre": "Iris Hinojosa", "grupo": "E"},
+    {"nombre": "Ana", "grupo": "E"}
 ]
 
 # Restricciones por grupo: clave = grupo, valor = lista de grupos a los que no pueden regalar
